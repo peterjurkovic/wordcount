@@ -3,10 +3,10 @@ package com.peterjurkovic.wordcount;
 import java.util.Collections;
 import java.util.List;
 
-import com.peterjurkovic.wordcount.counter.SkipPartialWordsCounter;
-import com.peterjurkovic.wordcount.counter.WordCounter;
-import com.peterjurkovic.wordcount.model.PartialStringList;
-import com.peterjurkovic.wordcount.model.Word;
+import com.peterjurkovic.wordcount.counters.SkipPartialWordsCounter;
+import com.peterjurkovic.wordcount.counters.WordCounter;
+import com.peterjurkovic.wordcount.models.PartialStringList;
+import com.peterjurkovic.wordcount.models.Word;
 import com.peterjurkovic.wordcount.utils.FileUtils;
 import com.peterjurkovic.wordcount.utils.StringSplitter;
 

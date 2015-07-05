@@ -3,7 +3,7 @@ package com.peterjurkovic.wordcount.utils;
 import java.util.Objects;
 import java.util.regex.Pattern;
 
-import com.peterjurkovic.wordcount.model.PartialStringList;
+import com.peterjurkovic.wordcount.models.PartialStringList;
 
 /**
  * The utility class which splits strings

@@ -1,4 +1,4 @@
-package com.peterjurkovic.wordcount.model;
+package com.peterjurkovic.wordcount.models;
 
 import static com.peterjurkovic.wordcount.WordListBuilder.toPartialList;
 import static org.hamcrest.core.Is.is;
@@ -9,7 +9,7 @@ import junitparams.Parameters;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import com.peterjurkovic.wordcount.model.PartialStringList;
+import com.peterjurkovic.wordcount.models.PartialStringList;
 
 @RunWith(JUnitParamsRunner.class)
 public class PartialStringListTest {

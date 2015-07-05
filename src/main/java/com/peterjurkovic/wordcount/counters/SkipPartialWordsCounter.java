@@ -1,4 +1,4 @@
-package com.peterjurkovic.wordcount.counter;
+package com.peterjurkovic.wordcount.counters;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.peterjurkovic.wordcount.model.PartialStringList;
-import com.peterjurkovic.wordcount.model.Word;
+import com.peterjurkovic.wordcount.models.PartialStringList;
+import com.peterjurkovic.wordcount.models.Word;
 
 /**
  * 

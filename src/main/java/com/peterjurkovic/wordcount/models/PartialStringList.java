@@ -1,4 +1,4 @@
-package com.peterjurkovic.wordcount.model;
+package com.peterjurkovic.wordcount.models;
 
 import java.util.ArrayList;
 import java.util.Iterator;

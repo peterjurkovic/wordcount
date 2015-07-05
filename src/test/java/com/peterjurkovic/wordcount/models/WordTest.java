@@ -1,4 +1,4 @@
-package com.peterjurkovic.wordcount.model;
+package com.peterjurkovic.wordcount.models;
 
 import static com.peterjurkovic.wordcount.WordListBuilder.createList;
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -13,7 +13,7 @@ import junitparams.Parameters;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import com.peterjurkovic.wordcount.model.Word;
+import com.peterjurkovic.wordcount.models.Word;
 
 @RunWith(JUnitParamsRunner.class)
 public class WordTest {

@@ -1,4 +1,4 @@
-package com.peterjurkovic.wordcount.counter;
+package com.peterjurkovic.wordcount.counters;
 
 import static com.peterjurkovic.wordcount.WordListBuilder.*;
 
@@ -14,10 +14,10 @@ import static org.hamcrest.core.Is.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import com.peterjurkovic.wordcount.counter.SkipPartialWordsCounter;
-import com.peterjurkovic.wordcount.counter.WordCounter;
-import com.peterjurkovic.wordcount.model.PartialStringList;
-import com.peterjurkovic.wordcount.model.Word;
+import com.peterjurkovic.wordcount.counters.SkipPartialWordsCounter;
+import com.peterjurkovic.wordcount.counters.WordCounter;
+import com.peterjurkovic.wordcount.models.PartialStringList;
+import com.peterjurkovic.wordcount.models.Word;
 
 @RunWith(JUnitParamsRunner.class)
 public class SkipPartialWordsCounterTest {
