@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.peterjurkovic.wordcount.PartialStringList;
-import com.peterjurkovic.wordcount.Word;
+import com.peterjurkovic.wordcount.model.PartialStringList;
+import com.peterjurkovic.wordcount.model.Word;
 
 public class WordListBuilder {
 	

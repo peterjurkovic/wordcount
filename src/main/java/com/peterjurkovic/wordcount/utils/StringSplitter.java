@@ -1,7 +1,9 @@
-package com.peterjurkovic.wordcount;
+package com.peterjurkovic.wordcount.utils;
 
 import java.util.Objects;
 import java.util.regex.Pattern;
+
+import com.peterjurkovic.wordcount.model.PartialStringList;
 
 /**
  * The utility class which splits strings

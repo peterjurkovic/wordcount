@@ -1,10 +1,10 @@
-package com.peterjurkovic.wordcount;
+package com.peterjurkovic.wordcount.utils;
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import static org.hamcrest.core.Is.*;
 import static org.junit.Assert.assertThat;
-import static com.peterjurkovic.wordcount.StringUtils.*;
+import static com.peterjurkovic.wordcount.utils.StringUtils.*;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

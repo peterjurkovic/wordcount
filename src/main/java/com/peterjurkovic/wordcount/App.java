@@ -3,6 +3,13 @@ package com.peterjurkovic.wordcount;
 import java.util.Collections;
 import java.util.List;
 
+import com.peterjurkovic.wordcount.counter.SkipPartialWordsCounter;
+import com.peterjurkovic.wordcount.counter.WordCounter;
+import com.peterjurkovic.wordcount.model.PartialStringList;
+import com.peterjurkovic.wordcount.model.Word;
+import com.peterjurkovic.wordcount.utils.FileUtils;
+import com.peterjurkovic.wordcount.utils.StringSplitter;
+
 
 /**
  * Word count application
@@ -37,7 +44,7 @@ public class App
     
     private static String readFile(String path){
     	try {
-			return TextFileReader.read( path );
+			return FileUtils.read( path );
 		} catch (Exception e) {
 			System.out.println("The file does not exist or is not a text file.");
 		}

@@ -1,4 +1,4 @@
-package com.peterjurkovic.wordcount;
+package com.peterjurkovic.wordcount.utils;
 
 import static org.junit.Assert.assertEquals;
 import static com.peterjurkovic.wordcount.WordListBuilder.*;
@@ -11,7 +11,7 @@ import junitparams.Parameters;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import com.peterjurkovic.wordcount.StringSplitter;
+import com.peterjurkovic.wordcount.utils.StringSplitter;
 
 @RunWith(JUnitParamsRunner.class)
 public class StringSplitterTest {

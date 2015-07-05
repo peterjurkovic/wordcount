@@ -1,4 +1,4 @@
-package com.peterjurkovic.wordcount;
+package com.peterjurkovic.wordcount.model;
 
 import java.util.Objects;
 
