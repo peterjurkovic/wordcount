@@ -10,30 +10,38 @@ import java.util.List;
  */
 public class App 
 {
-	
+	private static final WordCounter wordCounter = new SkipPartialWordsCounter();
 	
     public static void main( String[] args ){
     	countWords(args);
     }
     
-    public static void countWords( String[] args ){
+    private static void countWords( String[] args ){
     	if(args.length == 0){
     		System.out.println("Please select text file");
     	}else{
-    		try {
-				String text = TextFileReader.read(args[0]);
-				
-				PartialStringList list =	StringSplitter
-												.useWhiteSpaceSeparator()
-												.omitPunctuation()
-												.toLowerCase()
-												.split(text);
-				
-				printCounts( new SkipPartialWordsCounter().count(list) );
-			} catch (Exception e) {
-				System.out.println("The file does not exist or is not a text file.");
-			}
+				final String text = readFile(args[0]);
+				if(text != null && text.length() > 0){
+					printCounts( wordCounter.count( toList(text) ) );
+				}
     	}
+    }
+    
+    private static PartialStringList toList(String text){
+    	return StringSplitter
+					.useWhiteSpaceSeparator()
+					.omitPunctuation()
+					.toLowerCase()
+					.split(text);
+    }
+    
+    private static String readFile(String path){
+    	try {
+			return TextFileReader.read( path );
+		} catch (Exception e) {
+			System.out.println("The file does not exist or is not a text file.");
+		}
+    	return null;
     }
     
     

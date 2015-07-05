@@ -22,7 +22,7 @@ public class PartialStringList extends ArrayList<String> {
 	
 	/**
      * Returns <tt>true</tt> if this list contains the given element which 
-     * contains given substring. This method ignore elements which <b>are equal
+     * contains given substring. This method ignores elements which <b>are equal
      * to given value</b>.
      * 
      * E.g.:

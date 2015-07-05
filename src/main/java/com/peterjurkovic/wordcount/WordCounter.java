@@ -1,8 +1,8 @@
 package com.peterjurkovic.wordcount;
 
-import java.util.Collection;
+import java.util.List;
 
 public interface WordCounter {
 	
-	Collection<Word> count(PartialStringList wrodList);
+	List<Word> count(PartialStringList wrodList);
 }
