@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
  */
 public class StringSplitter {
 
-	private final static Pattern MULTI_WHITE_SPACE_SEPARATOR = Pattern.compile("[\\r\\n]?\\s+");
+	private final static Pattern MULTI_WHITE_SPACE_SEPARATOR = Pattern.compile("[\\r\\n\\s]+");
 	
 	private final Pattern separator;
 	private final boolean omitPunctuation;

@@ -1,10 +1,10 @@
 package com.peterjurkovic.wordcount;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * 
@@ -42,9 +42,9 @@ public class SkipPartialWordsCounter implements WordCounter {
 	 * 			or empty collection, never null.
 	 * 
 	 */
-	public Set<Word> count(PartialStringList stringWrodList) {
+	public List<Word> count(PartialStringList stringWrodList) {
 		if(stringWrodList == null || stringWrodList.isEmpty()){
-			return Collections.emptySet();
+			return Collections.emptyList();
 		}
 		final Map<String, Integer> wordMap = new HashMap<String, Integer>(stringWrodList.size());
 		for(final String strWord : stringWrodList){
@@ -57,14 +57,14 @@ public class SkipPartialWordsCounter implements WordCounter {
 				}
 			}
 		}
-		return toSet(wordMap);
+		return toList(wordMap);
 	}
 	
 	
 
 	
-	private Set<Word> toSet(final Map<String, Integer> wordMap){
-		final Set<Word> wordList = new HashSet<Word>(wordMap.size());
+	private List<Word> toList(final Map<String, Integer> wordMap){
+		final List<Word> wordList = new ArrayList<Word>(wordMap.size());
 		for (Map.Entry<String, Integer> entry : wordMap.entrySet()){
 			wordList.add(new Word(entry.getKey(), entry.getValue()));
 		}

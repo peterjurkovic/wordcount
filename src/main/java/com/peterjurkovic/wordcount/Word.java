@@ -2,7 +2,7 @@ package com.peterjurkovic.wordcount;
 
 import java.util.Objects;
 
-public class Word implements Comparable<Word> {
+public class Word implements Comparable<Word>{
 	
 	public final String value;
 	public final int count;
@@ -13,6 +13,13 @@ public class Word implements Comparable<Word> {
 		this.count = count;
 	}
 	
+	
+	public String getFirstLetterUp(){
+		if(value.length() == 0){
+			return value;
+		}
+		return value.substring(0,1).toUpperCase() + value.substring(1);
+	}
 	
 	@Override
 	public int hashCode() {
@@ -47,10 +54,12 @@ public class Word implements Comparable<Word> {
 		return "["+value +": " + count + "x]";
 	}
 
-
-	public int compareTo(Word o) {
-		return value.compareTo(o.value);
-	}
 	
+	public int compareTo(Word word) {
+		return word.value.length() - value.length();
+	}
+
+
+
 	
 }

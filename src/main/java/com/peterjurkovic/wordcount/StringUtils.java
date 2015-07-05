@@ -15,7 +15,20 @@ public class StringUtils {
 	/**
 	 * Removes punctuation marks from given text.
 	 * 
+	 * Removes following characters: <pre>:;*"',.?!</pre>
+	 * Following characters replaces by space: <pre>\/'</pre>
+	 * Replaces all multi-whitespace characters by only one whitespace.  
 	 * 
+	 * Examples:
+	 * <pre>
+	 *  Input					Output
+	 *  --------------------------------
+	 * "Hi; Hello;"			= "Hi Hello"
+	 * "It's great!"		= "It's great"
+	 * "foo/bar."			= "foo bar"
+	 * "foo  bar."			= "foo bar"
+	 * "\"quoted\""			= "quoted"
+	 * </pre>
 	 * 
 	 * @param text
 	 * @return
