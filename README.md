@@ -28,6 +28,6 @@ Right: 1
 
 ### Run
 
-Download [https://github.com/peterjurkovic/wordcount/releases/download/1.0.0/wordcount.jar](wordcount.jar) and execute
+Download [wordcount.jar](https://github.com/peterjurkovic/wordcount/releases/download/1.0.0/wordcount.jar) and execute
 
 `java -jar wordcount.jar file/path/to/text.txt`
